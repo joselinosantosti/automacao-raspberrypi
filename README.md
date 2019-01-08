@@ -1,6 +1,5 @@
 # controle-leds-php-raspberrypi3
-Controle leds, sensores ou o que quiser via web usando PHP, Raspberry e Python.
-Esse script usa a função shell-exec do php para executar scripts python
+Esse script usa a função shell-exec do php para executar scripts python no Raspberry pi 3
 
 1. Instale todos os softwares necessários
 sudo apt-get install php7.0
