@@ -3,8 +3,8 @@ Controle leds, sensores ou o que quiser via web usando PHP, Raspberry e Python.
 Esse script usa a função shell-exec do php para executar scripts python
 
 1. Instale todos os softwares necessários
-apt-get install php
-apt-get install apache2
+sudo apt-get install php7.0
+sudo apt-get install apache2
 
 2. Crie um projeto como o nome que desejar no diretório /var/www/html e adicine os seguintes arquivos
 index.php
