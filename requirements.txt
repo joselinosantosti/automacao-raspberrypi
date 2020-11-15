@@ -60,7 +60,7 @@ pickleshare==0.7.4
 picraft==1.0
 piglow==1.2.5
 pigpio==1.38
-Pillow==4.0.0
+Pillow==7.1.0
 prompt-toolkit==1.0.9
 ptyprocess==0.5.1
 pyasn1==0.1.9
