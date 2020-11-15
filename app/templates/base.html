@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>SmartHome</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+   </head>
+   <body>
+      <div id="container">
+         <div class="topnav" id="myTopnav">
+            <img class="left" src="{{ url_for('static', filename='img/logo2.png')}}"  id="logo" >
+            <a href="sair.php">Sair</a>
+            <a href="#home" class="active">Configurações</a>
+            <a href="auto.php" class="active">Auto</a>
+            <a href="cenas.php" class="active">Cenas</a>
+            <a href="cenas.php" class="active">Devices</a>
+            <a href="javascript:void(0);" class="icon" onclick="menuResponsivo()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </div>
+         <div class="row">
+            <div class="column column1">
+               <div class="sidebar" id="mySidenav">
+                  <a href="{{ url_for('dash')}}" class="active"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                   <a href="{{ url_for('iluminacao')}}" ><i class="fa fa-fw fa-lightbulb-o"></i> Iluminação</a>
+                  <a href=""><i class="fa fa-fw fa-shield"></i> Segurança</a>
+                  <a href=""><i class="fa fa-fw fa-thermometer-0"></i> Climatização</a>
+                  <a href=""><i class="fa fa-fw fa-television"></i> Entretenimento</a>
+               </div>
+            </div>
+            <div class="column column2">
+           
+                       {% block content %}
+                      {% endblock %}
+      
+            </div>
+         </div>
+         <div>
+            <p>Versão: 1.0.0 Smarthome</p>
+         </div>
+         <script>
+            function menuResponsivo() {
+                var x = document.getElementById("myTopnav");
+                var y = document.getElementById("mySidenav");
+                if (x.className === "topnav" && y.className === "sidebar") {
+                    x.className += " responsive";
+                    y.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                    y.className = "sidebar";
+                }
+            }
+         </script>
+      </div>
+   </body>
+</html>

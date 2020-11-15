@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="content">
+<form action="" method="post">
+{{ form.csrf_token }}
+  <h2>Iluminação</h2>
+  <div class="chaves_ilum">
+  
+     <label class="switch">
+        {{ form. lamp(onclick="this.form.submit();") }}
+      <span class="slider round"></span>
+      <span class="txt_lamp">Hall</span>
+   </label>
+ 
+   <label class="switch">
+      <input type="checkbox"  name="lamp2" onClick="controlar(2)">
+      <span class="slider round"></span>
+       <span class="txt_lamp">Cozinha</span>
+   </label>
+
+   <label class="switch">
+      <input type="checkbox"  name="lamp3">
+      <span class="slider round"></span>
+     <span class="txt_lamp">Frente</span>
+   </label>
+
+   <label class="switch">
+      <input type="checkbox"  name="lamp4">
+      <span class="slider round"></span>
+     <span class="txt_lamp">Fundos</span>
+   </label>
+</div>
+</form>
+</div>
+
+{% endblock %}
