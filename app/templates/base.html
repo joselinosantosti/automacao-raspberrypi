@@ -11,11 +11,11 @@
       <div id="container">
          <div class="topnav" id="myTopnav">
             <img class="left" src="{{ url_for('static', filename='img/logo2.png')}}"  id="logo" >
-            <a href="sair.php">Sair</a>
+            <a href="sair">Sair</a>
             <a href="#home" class="active">Configurações</a>
-            <a href="auto.php" class="active">Auto</a>
-            <a href="cenas.php" class="active">Cenas</a>
-            <a href="cenas.php" class="active">Devices</a>
+            <a href="auto" class="active">Auto</a>
+            <a href="cenas" class="active">Cenas</a>
+            <a href="cenas" class="active">Devices</a>
             <a href="javascript:void(0);" class="icon" onclick="menuResponsivo()">
             <i class="fa fa-bars"></i>
             </a>
@@ -31,10 +31,8 @@
                </div>
             </div>
             <div class="column column2">
-           
-                       {% block content %}
-                      {% endblock %}
-      
+                {% block content %}
+                {% endblock %}
             </div>
          </div>
          <div>
