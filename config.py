@@ -1,3 +1,3 @@
 DEBUG = True
 
-SECRET_KEY = 'minha-chave-segura'
+SECRET_KEY = 'chave-segura'

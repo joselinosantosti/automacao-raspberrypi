@@ -9,5 +9,5 @@ manager = Manager(app)
 #manager.add_command("runserver", Server(host="10.0.0.102", port=5000))
 manager.add_command("runserver", Server(port=6000))
 
-#from app.devices import lighting
+from app.models import Device
 from app.controllers import routes
