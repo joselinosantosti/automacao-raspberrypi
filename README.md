@@ -27,7 +27,7 @@ Se o seu Rasp for novo acompanhe o seguinte manual para instalação e configura
 Abra o terminal e digite
 sudo su (digite a senha)
 apt-get update && apt-get upgrade
-apt-get install flask
+pip install flask jinja2
 
 ## 4. Estruturando o projeto  Flask
 Crie uma pasta com o nome smarthome ou outro.
