@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ super() }} - Index{% endblock %}
+
+{% block content %}
+
+<div class="container container-style mt-5 pt-3">
+    {% include 'menu.html' %}
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="navbar-nav ml-3 sidebar">
+                    <li class="nav-item mb-3"><a href="/dashboard" class="nav-link"><i class="fa fa-dashboard"></i>
+                            Dashboard</a></li>
+                    <li class="nav-item"><a href="/lighting" class="nav-link"><i class="fa fa-lightbulb-o"></i>
+                            Lighting</a></li>
+                    <li class="nav-item"><a href="/security" class="nav-link"><i class="fa fa-shield"></i> Security</a>
+                    </li>
+                    <li class="nav-item"><a href="/climate" class="nav-link"><i class="fa fa-thermometer-0"></i>
+                            Climate</a></li>
+                    <li class="nav-item"><a href="/entertainment" class="nav-link"><i class="fa fa-television"></i>
+                            Entertainment</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-9 rounded mb-3 p-3">
+                <div class="">
+                    
+                    {% if module == 'lighting' %}
+                    {% include 'lighting.html' %}
+                    {% elif module == 'dashboard' %}
+                    {% include 'dash.html' %}
+                    {% endif %}
+
+                </div>
+                <div>
+                    <p>2021 © Version: 1.0.0 Smarthome</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

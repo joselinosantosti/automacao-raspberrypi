@@ -1,0 +1,135 @@
+body {
+	font-family: 'Segoe UI Light', Roboto, Arial, Helvetica, sans-serif;
+	background: url(../img/back.jpg);
+	background-size: cover;
+	background-repeat: repeat-y;
+	color: #fff;
+}
+.rounded {
+	border:2px solid #fff;
+	border-radius: 15px;
+	background-color: rgba(0,0,0, .2);
+}
+
+.container-style  {
+	border:2px solid #fff;
+	background-color: rgba(0,0,0, .2);
+	border-radius: 15px;
+}
+
+.sidebar .nav-item .nav-link {
+	padding: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	text-align: left;
+	background-color: rgba(0,0,0, .2);
+	border:2px solid #fff;
+	color: #fff;
+}
+.sidebar .nav-item .nav-link:hover {
+	background-color: rgba(58, 178, 88, 0.9);
+	transition-duration: 0.4s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+	color: rgba(58, 178, 88, 0.9);
+}
+
+.btn-green {
+	border-radius: 50px;
+	background-color: rgba(58, 178, 88, 0.9);
+	color: #fff;
+}
+
+/*LOGIN*/
+.container-login {
+	min-width: 400px;
+	margin-top: 200px;
+}
+
+.container-login input {
+	border-radius: 50px;
+}
+
+/*SWITCHS*/
+.switch {
+	position: relative;
+	width: 60px;
+	height: 34px;
+    display: block;
+    line-height: 30px;
+    margin-bottom:20px;
+}
+
+.switch input {
+    display:none;
+}
+.txt-slider {
+	width: 60px;
+	height: 34px;
+    display: block;
+    margin-left:75px;
+    padding-bottom:10px;
+    text-align:left;
+    font-weight: bold;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border:2px solid #fff;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: rgba(58, 178, 88, 0.9);
+}
+input:focus + .slider {
+	box-shadow: 0 0 1px #55efc4;
+}
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+.slider.round:before {
+	border-radius: 50%;
+}
+
+/*CORES PLACEHOLDER*/
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+ }

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container container-login w-25 container-style">
+    <h2 class="text-center p-4">Digite os dados para logar</h2>
+    <form action="/logar" method="POST">
+        <div class="form-group">
+            <input type="text" name="user" class="rounded form-control" placeholder="Usuário" maxlength="32"
+                required="">
+        </div>
+        <div class="form-group">
+            <input type="password" name="senha" class="rounded form-control" placeholder="Senha" maxlength="32"
+                required="">
+        </div>
+
+        <div class="text-danger"> Usuário ou senha invalidos. </div>
+        <div class="text-danger"> Faça o login para acessar. </div>
+
+        <button class="btn btn-lg btn-green btn-block" type="submit">Entrar</button>
+    </form>
+</div>
+{% endblock %}
