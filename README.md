@@ -12,8 +12,8 @@
 
 ## Etapas
 ## 1. Conexõs físicas
-Faça um esquema no Fritzing para definir qual pino será usado em qual dispositivo. Como na figura:
-
+Faça um esquema no Fritzing para definir qual pino será usado em qual dispositivo. Como na figura:<br>
+![Esquema](https://github.com/joselinosantosti/homeautomation-raspberrypi/blob/master/esquema.png)
 -O pino com conexão vermelha é o VCC, alimenta com 5V
 -O pino com conexão preta é o GND(terra)
 -O pino com conexão amarela é o 13 (GPIO), o que vamos conectar ao dispositivo a ser controlado
