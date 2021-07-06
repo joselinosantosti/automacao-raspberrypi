@@ -22,7 +22,7 @@ Para saber mais sobre as GPIO consulte ![Raspberry Pi GPIO](https://www.w3school
 
 ## 2. Instalação do sistema operacional
 Se o seu Rasp for novo acompanhe o seguinte manual para instalação e configuração:
-![Instalação do SO](https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp)
+[Instalação do SO](https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp)
 Ou acompanhe o minicurso do ![Curso em vídeo](https://www.youtube.com/watch?v=iBMXYA5rva8&list=PLHz_AreHm4dnGZ_nudmN4rvyLk2fHFRzy&index=11)
 
 ## 3. Criando virtualenv e instalando os pacotes necessários
