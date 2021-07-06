@@ -14,10 +14,10 @@
 ## 1. Conexõs físicas
 Faça um esquema no Fritzing para definir qual pino será usado em qual dispositivo. Como na figura:<br>
 ![Esquema](https://github.com/joselinosantosti/homeautomation-raspberrypi/blob/master/esquema.png)
--O pino com conexão vermelha é o VCC, alimenta com 5V
--O pino com conexão preta é o GND(terra)
--O pino com conexão amarela é o 13 (GPIO), o que vamos conectar ao dispositivo a ser controlado
--O relé contém módulos, estamos utilizando o primeiro, atenção no processo das conexões para não danificar o Rasp nem ocorrer mal funcionamento.
+-O pino com conexão vermelha é o VCC, alimenta com 5V<br>
+-O pino com conexão preta é o GND(terra)<br>
+-O pino com conexão amarela é o 13 (GPIO), o que vamos conectar ao dispositivo a ser controlado<br>
+-O relé contém módulos, estamos utilizando o primeiro, atenção no processo das conexões para não danificar o Rasp nem ocorrer mal funcionamento.<br>
 Para saber mais sobre as GPIO consulte ![Raspberry Pi GPIO](https://www.w3schools.com/nodejs/nodejs_raspberrypi_gpio_intro.asp)
 
 ## 2. Instalação do sistema operacional
@@ -40,10 +40,10 @@ pip install flask jinja2
 ## 4. Estruturando o projeto  Flask
 Crie uma pasta com o nome smarthome ou outro.
 Crie as subpastas
--static
--templates
--controllers
--models
+-static<br>
+-templates<br>
+-controllers<br>
+-models<br>
 Crie o arquivo app.py e adicione o código que está no projeto.
 
 ## 5. Módulo para controlar dispositivos localmente
