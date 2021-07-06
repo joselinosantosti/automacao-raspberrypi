@@ -18,12 +18,12 @@ Faça um esquema no Fritzing para definir qual pino será usado em qual disposit
 -O pino com conexão preta é o GND(terra)<br>
 -O pino com conexão amarela é o 13 (GPIO), o que vamos conectar ao dispositivo a ser controlado<br>
 -O relé contém módulos, estamos utilizando o primeiro, atenção no processo das conexões para não danificar o Rasp nem ocorrer mal funcionamento.<br>
-Para saber mais sobre as GPIO consulte ![Raspberry Pi GPIO](https://www.w3schools.com/nodejs/nodejs_raspberrypi_gpio_intro.asp)
+Para saber mais sobre as GPIO consulte [Raspberry Pi GPIO](https://www.w3schools.com/nodejs/nodejs_raspberrypi_gpio_intro.asp)
 
 ## 2. Instalação do sistema operacional
-Se o seu Rasp for novo acompanhe o seguinte manual para instalação e configuração:
+Se o seu Rasp for novo acompanhe o seguinte manual para instalação e configuração:<br>
 [Instalação do SO](https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp)
-Ou acompanhe o minicurso do ![Curso em vídeo](https://www.youtube.com/watch?v=iBMXYA5rva8&list=PLHz_AreHm4dnGZ_nudmN4rvyLk2fHFRzy&index=11)
+Ou acompanhe o minicurso do [Curso em vídeo](https://www.youtube.com/watch?v=iBMXYA5rva8&list=PLHz_AreHm4dnGZ_nudmN4rvyLk2fHFRzy&index=11)
 
 ## 3. Criando virtualenv e instalando os pacotes necessários
 Abra o terminal e digite
