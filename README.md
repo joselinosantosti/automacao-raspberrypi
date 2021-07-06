@@ -1,4 +1,4 @@
-# Homeautomation System with Raspberry Pi
+# Homeautomation System - Raspberry Pi 3
 ![SmartHome](https://github.com/joselinosantosti/automacao-raspberrypi/blob/master/smarthome.png)
 
 # Desenvolvido com Python, Flask e Firebase permite o controle remoto através da rede local e Internet.
